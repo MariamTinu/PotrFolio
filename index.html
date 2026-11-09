@@ -1,0 +1,1742 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alimi Mariam | Customer Support Specialist | Virtual Assistant</title>
+
+    <!-- Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons for tools and contact links -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /* =====================================
+           1. COLOUR PALETTE
+        ===================================== */
+
+        :root {
+            --navy: #102A43;
+            --deep-navy: #0B1D30;
+            --red: #B5122B;
+            --deep-red: #8F0D24;
+            --white: #FFFFFF;
+            --light-grey: #F4F6F9;
+            --text: #263447;
+            --muted: #A9B7C8;
+            --border: rgba(255, 255, 255, 0.12);
+        }
+
+
+        /* =====================================
+           2. RESET
+        ===================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--deep-navy);
+            color: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+
+        /* =====================================
+           3. GENERAL LAYOUT
+        ===================================== */
+
+        .container {
+            width: min(1160px, 90%);
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -1.5px;
+            margin-bottom: 18px;
+        }
+
+        .section-description {
+            max-width: 650px;
+            color: var(--muted);
+            margin-bottom: 38px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: #FF6B80;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .accent {
+            color: #FF5A70;
+        }
+
+        .red-panel {
+            background: linear-gradient(
+                135deg,
+                var(--red),
+                var(--deep-red)
+            );
+        }
+
+        .navy-panel {
+            background: var(--navy);
+        }
+
+        .section-divider {
+            width: 55px;
+            height: 4px;
+            background: var(--red);
+            margin: 22px 0;
+            border-radius: 10px;
+        }
+
+
+        /* =====================================
+           4. NAVIGATION
+        ===================================== */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 29, 48, 0.96);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            min-height: 78px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: #FF5A70;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #C2CDDA;
+            font-size: 0.83rem;
+            font-weight: 600;
+            transition: color 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FF5A70;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.7rem;
+            cursor: pointer;
+        }
+
+
+        /* =====================================
+           5. INTRODUCTION / HERO
+        ===================================== */
+
+        .hero {
+            padding: 85px 0 100px;
+            background: var(--deep-navy);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        /* PHOTO: NO BOX OR FRAME */
+
+        .hero-photo {
+            width: 100%;
+            max-width: 390px;
+            height: auto;
+            object-fit: cover;
+            justify-self: center;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .hero-content {
+            min-width: 0;
+        }
+
+        .hero-greeting {
+            color: #FF7183;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(2.6rem, 5vw, 4.6rem);
+            font-weight: 800;
+            line-height: 1.12;
+            letter-spacing: -2px;
+            overflow-wrap: anywhere;
+        }
+
+        /* RED BACKGROUND ONLY BEHIND THE TITLE */
+
+        .title-highlight {
+            display: table;
+            max-width: 100%;
+            margin-top: 20px;
+            padding: 12px 18px;
+            background: var(--red);
+            color: var(--white);
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(1rem, 2vw, 1.35rem);
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .hero-tagline {
+            margin-top: 22px;
+            max-width: 570px;
+            color: #D6DFE9;
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 13px 22px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            transition: 0.25s ease;
+        }
+
+        .button-primary {
+            background: var(--red);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #D51D3A;
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .button-secondary:hover {
+            border-color: #FF5A70;
+            color: #FF7183;
+        }
+
+
+        /* =====================================
+           6. ABOUT ME
+        ===================================== */
+
+        .about-section {
+            background: var(--navy);
+        }
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 75px;
+            align-items: start;
+        }
+
+        .about-copy {
+            color: #D1DCE8;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+
+        .about-copy p {
+            margin-bottom: 18px;
+        }
+
+        .about-copy p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-highlight {
+            border-left: 3px solid var(--red);
+            padding-left: 22px;
+        }
+
+        .about-highlight p {
+            color: #E1E8F0;
+        }
+
+
+        /* =====================================
+           7. KEY SKILLS AND TECHNICAL PROFICIENCIES
+        ===================================== */
+
+        .skills-section {
+            background: var(--deep-navy);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .skill-column {
+            padding: 32px;
+            background: linear-gradient(
+                145deg,
+                var(--red),
+                var(--deep-red)
+            );
+        }
+
+        .skill-column h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            font-size: 0.95rem;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+
+        /* =====================================
+           8. TOOLS I USE
+        ===================================== */
+
+        .tools-section {
+            background: linear-gradient(
+                135deg,
+                var(--red),
+                var(--deep-red)
+            );
+        }
+
+        .tools-section .eyebrow {
+            color: #FFE0E5;
+        }
+
+        .tools-section .section-description {
+            color: #FFE8EC;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 30px;
+            align-items: center;
+            justify-items: center;
+            margin-top: 45px;
+        }
+
+        .tool-item {
+            width: 100%;
+            min-height: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tool-item img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            transition: transform 0.25s ease;
+        }
+
+        .tool-item img:hover {
+            transform: translateY(-5px) scale(1.08);
+        }
+
+        /* LOGO-ONLY TOOL DISPLAY */
+
+        .tool-item span {
+            display: none;
+        }
+
+
+        /* =====================================
+           9. PROFESSIONAL EXPERIENCE
+        ===================================== */
+
+        .experience-section {
+            background: var(--navy);
+        }
+
+        .experience-layout {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 65px;
+            align-items: start;
+        }
+
+        .experience-intro {
+            color: #D1DCE8;
+            font-size: 1rem;
+            line-height: 1.9;
+        }
+
+        .experience-timeline {
+            border-left: 2px solid rgba(255, 255, 255, 0.18);
+            padding-left: 30px;
+        }
+
+        .experience-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-item::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: -37px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #FF5A70;
+            box-shadow: 0 0 0 5px rgba(181, 18, 43, 0.2);
+        }
+
+        .experience-item h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 7px;
+        }
+
+        .experience-date {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #FF7183;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .experience-item p {
+            color: var(--muted);
+            font-size: 0.94rem;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================
+           10. WORK SAMPLES
+        ===================================== */
+
+        .work-section {
+            background: linear-gradient(
+                135deg,
+                var(--red),
+                var(--deep-red)
+            );
+        }
+
+        .work-section .eyebrow {
+            color: #FFE0E5;
+        }
+
+        .work-section .section-description {
+            color: #FFE8EC;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 40px;
+        }
+
+        .work-card {
+            position: relative;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .work-card img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .work-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .work-caption {
+            padding: 14px;
+            color: white;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+
+        /* =====================================
+           11. PERFORMANCE HIGHLIGHTS
+           AND ACHIEVEMENTS
+        ===================================== */
+
+        .performance-section {
+            background: var(--deep-navy);
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .performance-card {
+            padding: 28px 24px;
+            border-top: 3px solid var(--red);
+            background: var(--navy);
+        }
+
+        .performance-card i {
+            color: #FF7183;
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+        }
+
+        .performance-card h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .performance-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================
+           12. CERTIFICATIONS & PROFESSIONAL
+           DEVELOPMENT
+        ===================================== */
+
+        .certifications-section {
+            background: var(--navy);
+        }
+
+        .certifications-layout {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .certifications-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .certification-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .certification-image:first-child {
+            margin-top: 35px;
+        }
+
+        .certifications-copy {
+            color: #D1DCE8;
+        }
+
+        .certifications-list {
+            list-style: none;
+            margin-top: 28px;
+        }
+
+        .certifications-list li {
+            position: relative;
+            padding: 13px 0 13px 30px;
+            border-bottom: 1px solid var(--border);
+            color: #E2EAF2;
+            font-size: 0.94rem;
+        }
+
+        .certifications-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF7183;
+            font-weight: 800;
+        }
+
+
+        /* =====================================
+           13. CONTACT
+        ===================================== */
+
+        .contact-section {
+            background: var(--deep-navy);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-copy p {
+            max-width: 520px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 25px;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            border: 1px solid var(--border);
+            color: white;
+            transition: 0.25s ease;
+        }
+
+        .contact-link:hover {
+            background: var(--red);
+            border-color: var(--red);
+            transform: translateY(-3px);
+        }
+
+        .contact-visual {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+        }
+
+
+        /* =====================================
+           14. FOOTER
+        ===================================== */
+
+        .site-footer {
+            padding: 28px 0;
+            background: #071421;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .footer-layout p {
+            color: #A9B7C8;
+            font-size: 0.84rem;
+        }
+
+        .footer-top {
+            color: white;
+            font-weight: 700;
+            font-size: 0.88rem;
+        }
+
+        .footer-top:hover {
+            color: #FF7183;
+        }
+
+
+        /* =====================================
+           15. TABLET RESPONSIVENESS
+        ===================================== */
+
+        @media (max-width: 1000px) {
+            .work-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .experience-layout,
+            .certifications-layout,
+            .contact-layout {
+                gap: 38px;
+            }
+
+            .certification-image {
+                height: 280px;
+            }
+        }
+
+
+        /* =====================================
+           16. MOBILE NAVIGATION
+        ===================================== */
+
+        @media (max-width: 760px) {
+            .section {
+                padding: 70px 0;
+            }
+
+            .nav-inner {
+                min-height: 70px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                padding: 24px 5%;
+                background: var(--deep-navy);
+                border-bottom: 1px solid var(--border);
+                max-height: 75vh;
+                overflow-y: auto;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 0.95rem;
+            }
+
+            .hero {
+                padding: 55px 0 70px;
+            }
+
+            .hero-grid,
+            .about-layout,
+            .skills-grid,
+            .experience-layout,
+            .certifications-layout,
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.5rem, 10vw, 4rem);
+                letter-spacing: -1.8px;
+            }
+
+            .hero-photo {
+                width: 100%;
+                height: 330px;
+                object-position: center;
+            }
+
+            .about-copy {
+                padding: 0;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 22px;
+            }
+
+            .tool-item img {
+                width: 52px;
+                height: 52px;
+            }
+
+            .performance-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certifications-images {
+                max-width: 500px;
+            }
+
+            .certification-image {
+                height: 250px;
+            }
+
+            .contact-visual {
+                height: 300px;
+            }
+
+            .footer-layout {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+        /* =====================================
+           17. SMALL MOBILE SCREENS
+        ===================================== */
+
+        @media (max-width: 420px) {
+            .container {
+                width: 92%;
+            }
+
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .work-card img {
+                aspect-ratio: 5 / 3;
+            }
+
+            .skill-column {
+                padding: 24px 20px;
+            }
+
+            .certifications-images {
+                grid-template-columns: 1fr;
+            }
+
+            .certification-image,
+            .certification-image:first-child {
+                height: 230px;
+                margin-top: 0;
+            }
+
+            .contact-links {
+                flex-direction: column;
+            }
+
+            .contact-link {
+                width: 100%;
+            }
+        }
+
+
+        /* =====================================
+           18. ACCESSIBILITY
+        ===================================== */
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .hero-tagline {
+            display: inline-block;
+            background: #B5122B;
+            color: #FFFFFF;
+            padding: 14px 20px;
+            margin: 20px 0;
+            font-size: 1.05rem;
+            font-weight: 700;
+            line-height: 1.7;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-inner">
+
+            <a href="#home" class="logo">
+                ALIMI <span class="accent">MARIAM.</span>
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work Samples</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- 1. HERO / INTRODUCTION -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-image-side">
+                    <!-- Replace this image URL with your own photo if desired. -->
+                    <img
+                        class="hero-photo"
+                        src="images/Happy.jpeg"
+                        alt="Professional working in a collaborative office"
+                    >
+                </div>
+
+                <div class="hero-content">
+
+                    <p class="hero-greeting">
+                        HELLO, WELCOME TO MY PORTFOLIO
+                    </p>
+
+                    <h1>
+                        ALIMI <span class="accent">MARIAM</span>
+                    </h1>
+
+                    <h2 class="title-highlight">
+                        Customer Support Specialist | Virtual Assistant | Real Estate Consultant
+                    </h2>
+
+                    <p class="hero-tagline">
+                        I help businesses deliver responsive customer support, strengthen client relationships, and keep daily operations organised.
+
+                    </p>
+
+                    <p class="hero-description">
+                        I am detail-oriented and organised, with a strong focus on clear communication,
+                        empathetic support, accurate record-keeping, and practical problem-solving.
+                        I am open to remote opportunities across different time zones.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#work" class="button button-primary">
+                            Explore My Work ↗
+                        </a>
+
+                        <a href="#contact" class="button button-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 2. ABOUT ME -->
+        <section class="section about-section" id="about">
+            <div class="container about-layout">
+
+                <div class="about-copy">
+
+                    <span class="eyebrow">02 / ABOUT ME</span>
+
+                    <h2 class="section-heading">
+                        Customer care with <span class="accent">purpose.</span>
+                    </h2>
+
+                    <div class="section-divider"></div>
+
+                    <p>
+                        I am Alimi Mariam, a Customer Support Specialist and Virtual Assistant
+                        with practical experience supporting customers and handling administrative tasks.
+                        My work includes managing customer enquiries, maintaining accurate records,
+                        coordinating schedules, and following up on orders to confirm successful deliveries.
+                        I have also coordinated a contribution group of 46 members, helping keep communication
+                        and delivery organised.
+                    </p>
+
+                    <br>
+
+                    <p class="about-highlight">
+                        I focus on timely responses, attentive listening, accurate documentation, and effective
+                        problem-solving to create positive customer experiences and build lasting relationships.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 3. KEY SKILLS AND TECHNICAL PROFICIENCIES -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <span class="eyebrow">03 / MY SKILLS</span>
+
+                <h2 class="section-heading">
+                    Key Skills & Technical Proficiencies
+                </h2>
+
+                <p class="section-description">
+                    I use these skills to support customers, manage daily administrative tasks,
+                    and contribute to smooth, well-organised operations.
+                </p>
+
+                <div class="skills-grid">
+
+                    <!-- CORE SKILLS -->
+                    <div class="skill-column">
+
+                        <h3>Core Skills</h3>
+
+                        <ul class="skill-list">
+                            <li>Customer Support</li>
+                            <li>Customer Inquiry Handling</li>
+                            <li>Email and Chat Support</li>
+                            <li>Issue Resolution</li>
+                            <li>Complaint Handling</li>
+                            <li>Ticket Management</li>
+                            <li>Customer Follow-up</li>
+                            <li>Customer Feedback Management</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- SOFT SKILLS -->
+                    <div class="skill-column">
+
+                        <h3>Soft Skills</h3>
+
+                        <ul class="skill-list">
+                            <li>Communication</li>
+                            <li>Active Listening</li>
+                            <li>Empathy and Patience</li>
+                            <li>Problem-Solving</li>
+                            <li>Time Management</li>
+                            <li>Attention to Detail</li>
+                            <li>Adaptability</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 4. TOOLS I USE: 15 LOGOS ONLY -->
+        <section class="section tools-section" id="tools">
+            <div class="container">
+
+                <span class="eyebrow">04 / MY DIGITAL TOOLKIT</span>
+
+                <h2 class="section-heading">
+                    Tools I Use
+                </h2>
+
+                <p class="section-description">
+                    A selection of digital tools relevant to communication,
+                    customer support, collaboration, and productivity.
+                </p>
+
+                <div class="tools-grid">
+
+                    <div class="tool-item">
+                        <img
+                            src="images/TRELLO.png"
+                            alt="Trello logo"
+                            title="Trello"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/canva"
+                            alt="Canva logo"
+                            title="Canva"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/doc"
+                            alt="Google Docs logo"
+                            title="Google Docs"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/sheet"
+                            alt="Google Sheets logo"
+                            title="Google Sheets"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/excel"
+                            alt="Microsoft Excel logo"
+                            title="Microsoft Excel"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/gmail"
+                            alt="Gmail logo"
+                            title="Gmail"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/calender.webp"
+                            alt="Google Calendar logo"
+                            title="Google Calendar"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/zoom"
+                            alt="Zoom logo"
+                            title="Zoom"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/slack"
+                            alt="Slack logo"
+                            title="Slack"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/zen"
+                            alt="Zendesk logo"
+                            title="Zendesk"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/desk"
+                            alt="Freshdesk logo"
+                            title="Freshdesk"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/inter com"
+                            alt="Intercom logo"
+                            title="Intercom"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/hub spot.webp"
+                            alt="HubSpot logo"
+                            title="HubSpot"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/team"
+                            alt="Microsoft Teams logo"
+                            title="Microsoft Teams"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="tool-item">
+                        <img
+                            src="images/notion.webp"
+                            alt="Notion logo"
+                            title="Notion"
+                            loading="lazy"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 5. PROFESSIONAL EXPERIENCE -->
+        <section class="section experience-section" id="experience">
+            <div class="container experience-layout">
+
+                <div>
+
+                    <span class="eyebrow">05 / PROFESSIONAL EXPERIENCE</span>
+
+                    <h2 class="section-heading">
+                        A commitment to better customer experiences.
+                    </h2>
+
+                    <div class="section-divider"></div>
+
+                    <p class="experience-intro">
+                        I bring practical experience in customer communication, order follow-up,
+                        record keeping, calendar coordination, and remote administrative support.
+                        I approach each task with professionalism, attention to detail, and a commitment
+                        to completing work accurately and on time.
+                    </p>
+
+                </div>
+
+                <div class="experience-timeline">
+
+                    <article class="experience-item">
+
+                        <span class="experience-date">
+                            2025-2026
+                        </span>
+
+                        <h3>CUSTOMER SUPPORT SPECIALIST</h3>
+
+                        <p>Freelance Customer Support Specialist | Logistics | 2025–2026</p>
+
+                        <p>
+                            • Responded to customer enquiries and provided clear, helpful support.<br>
+                            • Managed calendars, emails, and data-entry tasks with 95% accuracy.<br>
+                            • Updated and maintained records using Numbers, Google Sheets, and Microsoft Excel,
+                            with zero recorded data-entry errors across multiple projects.<br>
+                            • Followed up with customers by phone to confirm order deliveries and update order records.<br>
+                            • Contributed to a 85% improvement in client satisfaction through timely communication
+                            and efficient task coordination.
+                        </p>
+
+                    </article>
+
+                    <article class="experience-item">
+
+                        <span class="experience-date">
+                            09-10-2026
+                        </span>
+
+                        <p>
+                            PRIMEAXIS PROJECT
+                        </p>
+
+                        <p>
+                            Developed a multi-page business website using HTML, CSS, and JavaScript.
+                            The project includes Home, About, Services, Projects, and Contact pages,
+                            with dedicated pages for Real Estate, Construction, Property Management,
+                            and Building Materials Supply. The layout uses a consistent visual style
+                            and responsive page structure.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 6. WORK SAMPLES: EIGHT PICTURES -->
+        <section class="section work-section" id="work">
+            <div class="container">
+
+                <span class="eyebrow">06 / WORK SAMPLES</span>
+
+                <h2 class="section-heading">
+                    A Look at My Work
+                </h2>
+
+                <p class="section-description">
+                    Selected examples of customer support, communication, and administrative
+                    workflows completed or practised using digital productivity tools.
+                </p>
+
+                <div class="work-grid">
+
+                    <article class="work-card">
+                        <img
+                            src="images/Intercom 2.jfif"
+                            alt="Team collaborating on customer-related tasks"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Intercom
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/me.jfif"
+                            alt="Computer workspace for digital communication"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Asana
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/FM5.jpg"
+                            alt="Colleagues discussing a project"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Googleworkspace
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/Screenshot (14).png"
+                            alt="Computer screen showing business information"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Calendar Management
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/ZND.jfif"
+                            alt="Professionals working together"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Zendesk
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/WhatsApp Image 2026-11-06 at 07.47.37.jpeg"
+                            alt="Organised office workspace"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            Trello
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/Bouding 2.jpg"
+                            alt="Professional reviewing work documents"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            GoogleForm
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                            src="images/Hub 1.jpg"
+                            alt="Team meeting in a professional environment"
+                            loading="lazy"
+                        >
+                        <p class="work-caption">
+                            HubSpot
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 7. PERFORMANCE HIGHLIGHTS AND ACHIEVEMENTS -->
+        <section class="section performance-section" id="achievements">
+            <div class="container">
+
+                <span class="eyebrow">07 / PERFORMANCE & ACHIEVEMENTS</span>
+
+                <h2 class="section-heading">
+                    Focused on meaningful results.
+                </h2>
+
+                <p class="section-description">
+                    I aim to deliver dependable support through clear communication,
+                    organised workflows, accurate records, and consistent follow-through.
+                </p>
+
+                <div class="performance-grid">
+
+                    <article class="performance-card">
+                        <i class="fa-solid fa-comments"
+                           aria-hidden="true"></i>
+
+                        <h3>Customer Communication</h3>
+
+                        <p>
+                            Clear, respectful communication that helps customers
+                            understand information and next steps.
+                        </p>
+                    </article>
+
+                    <article class="performance-card">
+                        <i class="fa-solid fa-lightbulb"
+                           aria-hidden="true"></i>
+
+                        <h3>Problem-Solving</h3>
+
+                        <p>
+                            A structured approach to understanding questions,
+                            investigating issues, and identifying possible solutions.
+                        </p>
+                    </article>
+
+                    <article class="performance-card">
+                        <i class="fa-solid fa-chart-line"
+                           aria-hidden="true"></i>
+
+                        <h3>Continuous Improvement</h3>
+
+                        <p>
+                            Building skills, learning from feedback, and identifying
+                            ways to improve the customer support experience.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 8. CERTIFICATIONS AND PROFESSIONAL DEVELOPMENT -->
+        <section class="section certifications-section" id="certifications">
+            <div class="container certifications-layout">
+
+                <!-- TWO IMAGES ON THE LEFT -->
+                <div class="certifications-images">
+
+                    <img
+                        class="certification-image"
+                        src="images/mari.jfif"
+                        alt="Notes and study materials"
+                        loading="lazy"
+                    >
+
+                    <img
+                        class="certification-image"
+                        src="images/ZZ - Copy.jpg"
+                        alt="Students learning together"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <!-- TEXT ON THE RIGHT -->
+                <div class="certifications-copy">
+
+                    <span class="eyebrow">
+                        08 / PROFESSIONAL DEVELOPMENT
+                    </span>
+
+                    <h2 class="section-heading">
+                        Learning that supports better service.
+                    </h2>
+
+                    <p>
+                        I completed Virtual Assistant Skills programme at RemoteHive Academy
+                        and continue to strengthen my knowledge of customer service,
+                        communication, and the digital tools used to manage customer interactions.
+                    </p>
+
+                    <ul class="certifications-list">
+
+                        <li>Virtual Assistant Skills  — RemoteHive Academy</li>
+                        <li>Customer service principles and professional support practices</li>
+
+                        <li>
+                            Communication, active listening, and empathy
+                        </li>
+
+                        <li>
+                            Complaint handling and conflict resolution
+                        </li>
+
+                        <li>
+                            Customer relationship management and ticketing tools
+                        </li>
+
+                        <li>
+                            Data privacy and customer confidentiality
+                        </li>
+
+                    </ul>
+
+                    <p style="margin-top: 22px; font-size: 0.88rem;">
+                        
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 9. CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-layout">
+
+                <div class="contact-copy">
+
+                    <span class="eyebrow">09 / LET'S CONNECT</span>
+
+                    <h2 class="section-heading">
+                        Let's make every interaction count.
+                    </h2>
+
+                    <div class="section-divider"></div>
+
+                    <p>
+                        I am open to remote Customer Support Specialist and Virtual Assistant opportunities
+                        across different time zones. If you need someone who can communicate professionally,
+                        support customers, and keep daily tasks organised, I would be glad to connect.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a
+                            class="contact-link"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=mariamtinuke007@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Email Mariam using Gmail"
+                        >
+                            Email Me
+                        </a>
+
+                        <!-- Replace with your own LinkedIn profile URL. -->
+                        <a
+                            class="contact-link"
+                            href="https://www.linkedin.com/in/mariam-alimi-?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-linkedin"
+                               aria-hidden="true"></i>
+                            LinkedIn
+                        </a>
+
+                        <!-- Replace with your own GitHub profile URL if applicable. -->
+                        <a
+                            class="contact-link"
+                            href="https://github.com/MariamTinu/Mariam-Portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-github"
+                               aria-hidden="true"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <img
+                    class="contact-visual"
+                    src="images/WhatsApp Image 2026-10-21 at 08.02.04.jpeg"
+                    alt="Professionals collaborating in a workplace"
+                    loading="lazy"
+                >
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-layout">
+
+            <p>
+                © <span id="copyrightYear"></span>
+                Alimi Mariam. All rights reserved.
+            </p>
+
+            <p>
+                Customer Support · Communication · Continuous Learning
+            </p>
+
+            <a href="#home" class="footer-top">
+                Back to Top ↑
+            </a>
+
+        </div>
+    </footer>
+
+
+    <!-- MOBILE MENU AND COPYRIGHT YEAR -->
+    <script>
+        const menuButton = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-links");
+
+        menuButton.addEventListener("click", function () {
+            const isOpen = navMenu.classList.toggle("active");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+            menuButton.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation" : "Open navigation"
+            );
+
+            menuButton.textContent = isOpen ? "×" : "☰";
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navMenu.classList.remove("active");
+
+                menuButton.setAttribute("aria-expanded", "false");
+                menuButton.setAttribute("aria-label", "Open navigation");
+
+                menuButton.textContent = "☰";
+            });
+        });
+
+        document.getElementById("copyrightYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
